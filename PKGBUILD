@@ -1,10 +1,10 @@
 # Maintainer: Mazhar Hussain <realmazharhussain@gmail.com>
 pkgname=adw-gtk-theme
 pkgver=1.1
-pkgrel=2
+pkgrel=3
 pkgdesc="LibAdwaita Theme for all GTK3 and GTK4 Apps. NOTE: This is a meta package which uses adw-gtk3 for GTK3 and official LibAdwaita theme for GTK4"
 arch=(any)
-depends=(libadwaita adw-gtk3)
+depends=(libadwaita adw-gtk3 glib2-devel)
 install=$pkgname.install
 source=(extract-libadwaita-theme.{hook,sh} index.theme.{light,dark})
 md5sums=(
